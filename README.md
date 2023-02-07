@@ -56,5 +56,5 @@ Download and install the [Protokol](https://hexler.net/protokol) test utility.
 1. Download the free [Connection Kit](https://www.ableton.com/en/packs/connection-kit/).
 2. Open Ableton Live and drag *OSC TouchOSC.amxd* and *OSC Send.amxd* to the *User Library*
 3. Drag *OSC TouchOSC* to a track
-  * Port: Use the value from *TouchOSC app (any platform) > Connections > OSC > Send Port*. My desktop shows `6666` while my 3 connected iDevices show `8000`, so I entered `8000`
+ * Port: Use the value from *TouchOSC app (any platform) > Connections > OSC > Send Port*. My desktop shows `6666` while my 3 connected iDevices show `8000`, so I entered `8000`
 
