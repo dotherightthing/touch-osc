@@ -63,6 +63,8 @@ But [Wired USB Connection To TouchOSC](https://osculator.net/forum/forum/support
 
 Download and install the [Protokol](https://hexler.net/protokol) test utility.
 
+**Note: this comes with some quirks** - this doesn't seem to register messages sent from an iDevice using a wired connection and with WiFi also enabled (notionally to allow OSC over the wire, see <https://forum.pdpatchrepo.info/topic/10184/touchosc-direct-usb-connection-finally-possible-with-midimux>). For iDevices it's therefore better to click the 3 bars icon to toggle the Log area, and then select OSC.
+
 #### iOS
 
 Tap on *Connections* (link icon)
