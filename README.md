@@ -233,11 +233,19 @@ Mac is sluggish though - USB overload?
 
 ---
 
-#### After a restart:
+So it looks like WiFi needs to be enabled for the initial connection, then it can be disabled.
+
+Rinse and repeat...
+
+---
+
+#### After a restart of the Mac
 
 ##### OSC TouchOSC
 
 Neither iDevice is controlling Live.
+
+OSC Connection - Neither iDevice can see the Mac or anything else
 
 ##### OSC Send - Instance 1 for iDevice A
 
@@ -247,8 +255,48 @@ Not working.
 
 Live is only sending to iDevice B.
 
+#### After reenabling WiFi on Mac and both iDevices and restarting both Touch OSC apps
+
+OSC Connection - devices can see each other but not the Mac
+
+Noticed that Bridge was enabled for both devices with USB option, although Bridge was closed.
+
+OSC Connection - devices can see each other but not the Mac
+
+Open Bridge with USB connections.
+
+Reenabled Bridge connections and choose USB.
+
+OSC Connection - devices can see each other but not the Mac
+
+Restarted both devices.
+
+OSC Connection - devices can see each other but not the Mac
+
+Warning in top right hand corner of Mac screen - USB Accessories Disabled - Unplug the accessory using too much power to re-enable USB devices.
+
+Unplugged both devices
+
+Manually closed warning
+
+Reconnected both devices
+
+OSC Connection - devices can see each other but not the Mac
+
+Unplugged both devices
+
+Restarted Mac
+
+Plugged in iDevice A only
+
+OSC Connection - Device cannot see anything
+
+Unplugged Device B cable from monitor
+
+Unplugged Device A cable from iPad and Mac
+
+Reconnected Device A cable to Mac
+
+OSC Connection - Device cannot see anything
+
 ---
-
-So it looks like WiFi needs to be enabled for the initial connection, then it can be disabled.
-
-Rinse and repeat...
