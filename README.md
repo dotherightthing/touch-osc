@@ -68,7 +68,7 @@ Tap on *Connections* (link icon)
 1. Download the free [Connection Kit](https://www.ableton.com/en/packs/connection-kit/).
 2. Open Ableton Live and drag *OSC TouchOSC.amxd* and *OSC Send.amxd* to the *User Library*
 3. Drag *OSC TouchOSC* to a track
-   * *Port*: This is the 'in' port, corresponding to the iOS 'out' port - so enter the iOS *Send Port* number (`6666`)
+   * *Port*: This is the Mac's 'in' port, corresponding to the iOS device's 'out' port - so enter the iOS *Send Port* number (`6666`)
    * Click *Learn* > Move the slider on an iOS device > `/myfader` appears under *OSC Address`
    * Click *Map* > Move a control in Live > The control's name appears under the *Parameter* box
    * Move the slider on an iOS device > The mapped control moves
