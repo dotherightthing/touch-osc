@@ -74,6 +74,7 @@ Tap on *Connections* (link icon)
    * Move the slider on an iOS device > The mapped control moves.
    * Note: this is uni-directional, so the other connected iDevices won't update to match, and you'll need to configure each device to have a matching UDP connection in order for them to also have uni-directional control.
    * Note: The mapped control cannot be moved with the mouse anymore.
+   * Click away from *Learn*
 
 ---
 
