@@ -29,7 +29,7 @@ Locate the address `192.xxx.x.xx:6666` and click *Connect* (I don't know what th
 
 This puts your device into Control Surface mode. (This is usually accessed via the triangle / *Play* icon).
 
-Click on an element in the desktop editor, change the *Color* then click away. The element color should update on all connected iDevices as well, regardless of whether they are connected via USB or WiFi.
+Click on an element in the desktop editor, change the *Color* then click away. The element color will update on all connected iDevices (regardless of whether they are connected via USB or WiFi).
 
 ---
 
