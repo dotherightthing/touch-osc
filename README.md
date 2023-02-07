@@ -32,17 +32,17 @@ To change the name:
 
 Download [TouchOSC app from the App Store](https://apps.apple.com/us/app/touchosc/id1569996730) (USD 9.99, NZD 16.99). One purchase enables the download for all of your iDevices.
 
-Connect your device via USB if possible to reduce latency.
+Connect your device via USB and disable WiFi. This minimises latency and reduces the complexity of network connections!
 
 Open the app.
 
 Tap on *Editor Network* (WiFi icon) > Client. Locate your Mac's name in the list and tap the down arrow to see the address options.
 
-Locate the address `192.xxx.x.xx:6666` and click *Connect* (I don't know what the other addresses represent and/or if one of them is the USB connection).
+Locate the address `169.xxx.xxx.xx` (this appears at the top of the list and is currently `169.254.248.82`) and click *Connect*.
 
-This puts your device into Control Surface mode. (This is usually accessed via the triangle / *Play* icon).
+This forces your device into Control Surface mode. (This is normally accessed via the triangle / *Play* icon).
 
-**In the desktop editor,** change the *Color* then click away. The element color will update on all connected iDevices (regardless of whether they are connected via USB or WiFi).
+**In the desktop editor,** change the *Color* then click away. The element color will update on all *Client* iDevices (regardless of whether they are connected via USB or WiFi).
 
 ---
 
