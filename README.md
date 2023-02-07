@@ -26,7 +26,7 @@ To change the name:
 1. Click on `name` and click Delete.
 2. To the right of *Address*, click `+` > Constant.
 3. Delete `constant` and type something else, e.g. `myfader`.
-4. Click away and the *Address* changes to `/myfader`, while the *Control* name is still `fader1`. This means that the OSC address of the `fader1` control is now `./myfader`.
+4. Click away and the *Address* changes to `/myfader`. The *Control* name is still `fader1`. This means that the OSC address of the `fader1` control is now `./myfader`.
 
 #### iOS
 
