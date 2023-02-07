@@ -48,6 +48,13 @@ This puts your device into Control Surface mode. (This is usually accessed via t
 
 ### OSC
 
+> Please note the wired USB connection only passes MIDI through (which is the purpose of the TouchOSC Bridge), as OSC itself requires a network protocol to function and therefore does require a network connection.
+> 
+> More information on wired connection with TouchOSC can be found here: https://hexler.net/blog/post/uncut-the-wire
+>
+> [Source](https://forum.cockos.com/showpost.php?s=2ec6a5eec3cf68ef01881e65ae863ad9&p=2113867&postcount=4)
+
+
 #### macOS
 
 Download and install the [Protokol](https://hexler.net/protokol) test utility.
