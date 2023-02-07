@@ -1,9 +1,7 @@
 # Touch OSC
 Experiments with TouchOSC
 
-## Setup
-
----
+## Setup - Attempt 1
 
 ### Interface Editor
 
@@ -125,3 +123,132 @@ Download [TouchOSC Bridge](https://hexler.net/touchosc).
 Install and open TouchOSC Bridge. *Enable USB Connections* is checked by default.
 
 Download and install the [Protokol](https://hexler.net/protokol) test utility.
+
+---
+
+## Setup - Attempt 2
+
+### Using the Ableton Connection Kit to send and receive OSC
+
+#### A) Mac: Wifi, iPad: Wifi, iPad to Mac: Wired
+
+##### iDevice
+
+* Host: 192.168.1.24:6667
+* Send Port: 6667
+* Receive Port: 6668
+
+##### OSC TouchOSC
+
+* Port: 6667
+
+This corresponds to the Send Port in iDevice > Connections > Host (Browse to Mac then choose either 192 or 169 or other???? address - which address is really undocumented).
+
+So essentially this is the port that the Mac is sending out on.
+
+##### OSC Send
+
+* Host: 192.168.1.21
+* Port: 6668
+
+Host has nothing to do with the Mac host, it's the iDevice hosting the app.
+
+This is not at all clear in the app preferences. What you get there is an (i) which you click on. Apparently those addresses relate to the iDevice. I don't know why there are so many!! But choose 192.168.1.21 to match the host address style.
+
+Note: choosing 127.0.0.1 doesn't represent the USB connection / doesn't work.
+
+The port is not shown there so just make one up. Presumably some ports are already used so randomly choose one until it works. I just added 1 to the Mac port - 6667 + 1 = 6668.
+
+Two things suck about this:
+
+1. This is presumably a wireless address, which sucks for keeping the latency down when all the flatties are on Netflix.
+2. This targets one device, so you'd need a second sender to target a second device (if supported).
+
+Note that these are only limitiations of OSC. MIDI can still use the bridge. So theoretically MIDI commands wouldn't be affected by network latency.
+
+#### B) Mac: NO-Wifi, iPad: Wifi, iPad to Mac: Wired
+
+##### iDevice
+
+* Host: 169.254.248.82:6667 (192~ is not available)
+* Send Port: 6667
+* Receive Port: 6668
+
+##### OSC TouchOSC
+
+* Port: 6667 (no change)
+
+##### OSC Send
+
+Host: 169.254.77.91 (iDevice Address en2)
+Port: 6668 (no change)
+
+#### C) Mac/iPad/iPhone: Wired, NO-Wifi, NO-Bluetooth, TouchOSC Bridge closed
+
+##### iDevice A
+
+* Host: 169.254.248.82:6667 (same as B)
+* Send Port: 6667
+* Receive Port: 6668
+
+##### iDevice B
+
+* Host: 169.254.131.77:6667 (169.254.228.204:6667 was also available but that didn't work)
+* Send Port: 6667
+* Receive Port: 6668
+
+##### OSC TouchOSC
+
+* Port: 6667 (no change)
+
+###### iDevice A iOS 16.3 (local project with address `/myfader`, plugged into Mac)
+
+Moving fader does not affect iDevice B.
+
+###### iDevice B iOS 16.3 (local project with address `/myfader`, plugged into monitor usb port)
+
+Moving fader **does** affect iDevice A.
+
+###### iDevice C iOS 15.7 (local project with address `/myfader`, plugged into monitor usb port, and thenb USB3 hub)
+
+Cannot find any host. Does not show any address of type 192 or 169 in the (i) popup.
+
+Lightening connection is dodgy but when connected it charges and the Mac can see it and show the Finder management screen including the iOS version.
+
+##### OSC Send - Instance 1 for iDevice A
+
+Host: 169.254.77.91 (no change from B)
+Port: 6668 (no change)
+
+##### OSC Send - Instance 2 for iDevice B
+
+Host: 169.254.86.63
+Port: 6668 (no change)
+
+Moving Live fader affect both iDevice A and B.
+
+When both OSC TouchOSC and OSC Send are enabled: both iDevices control one another and Live.
+
+Mac is sluggish though - USB overload?
+
+---
+
+#### After a restart:
+
+##### OSC TouchOSC
+
+Neither iDevice is controlling Live.
+
+##### OSC Send - Instance 1 for iDevice A
+
+Not working.
+
+##### OSC Send - Instance 2 for iDevice B
+
+Live is only sending to iDevice B.
+
+---
+
+So it looks like WiFi needs to be enabled for the initial connection, then it can be disabled.
+
+Rinse and repeat...
