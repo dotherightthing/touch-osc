@@ -9,7 +9,7 @@ Experiments with TouchOSC
 
 #### MacOS
 
-Download and install [TouchOSC app for Mac](https://hexler.net/touchosc). It's free but intermittemtly suggests that you [buy a license](https://hexler.net/touchosc#buy) (NZD 44.16).
+Download and install [TouchOSC app for Mac](https://hexler.net/touchosc). It's free but intermittently suggests that you [buy a license](https://hexler.net/touchosc#buy) (NZD 44.16).
 
 Download and install the [Protokol](https://hexler.net/protokol) test utility.
 
@@ -26,6 +26,10 @@ Connect your device via USB if possible to reduce latency.
 Open the app.
 
 Click the WiFi symbol (which means *Editor Network*) > Client. Select your Mac's name from the list. Locate the address `192.xxx.x.xx:6666` and click *Connect* (I don't know what the other addresses represent and/or if one of them is the USB connection).
+
+This puts your device into Control Surface mode (usually accessed via the triangle / *Play* icon).
+
+Click on an element in the desktop editor, change the *Color* then click away. The element color should update on the iDevice as well.
 
 ---
 
