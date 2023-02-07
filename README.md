@@ -86,7 +86,7 @@ Disable the *OSC TouchOSC* device
 
 Drag *OSC Send.amxd* to the same (or another) track
 
-1. *Host*: Enter the IP Address of the iDevice (`192.168.1.21`)
+1. *Host*: Enter the IP Address of the iDevice (`192.168.1.21`) - this means that it's impossible to update all connected iDevices at the same time. Alternatively enter the IP Address of the Mac (`192.168.1.24`) - but this won't affect the connected iDevices, even if they are connected to the *Editor Network* server
 2. *Port*: Enter the *Receive Port* of the iDevice (`6667`)
 3. Move the slider in Live > The control will update on the iDevice
 
