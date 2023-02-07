@@ -239,6 +239,8 @@ Rinse and repeat...
 
 ---
 
+## Setup - Attempt 3
+
 #### After a restart of the Mac
 
 ##### OSC TouchOSC
@@ -298,5 +300,201 @@ Unplugged Device A cable from iPad and Mac
 Reconnected Device A cable to Mac
 
 OSC Connection - Device cannot see anything
+
+---
+
+## Setup - Attempt 4
+
+Open Touch OSC on Mac
+
+OSC Connection - Device can now see Mac
+
+But why does Touch OSC have to be open on the Mac? Isn't that the point of the Bridge?
+
+Close Touch OSC on Mac.
+
+Enable Bridge on Device using USB.
+
+OSC Connection - Device cannot see anything
+
+Enable Bridge on Device using Mac - 192.168.1.24:12101
+
+OSC Connection - Device cannot see anything
+
+---
+
+## Setup - Attempt 5
+
+Open Touch OSC on Mac
+
+Disable all connections in Touch OSC on the Mac
+
+OSC Connection - Device can now see Mac
+
+So maybe the concept of a 'host' on Touch OSC means an instance of the cross-platform Touch OSC app. You connect to another instance of the app.
+
+In terms of Ableton Live integration, the Touch OSC app has to be running on the same platform, i.e. the Mac. Is that it?
+
+---
+
+## Setup - Attempt 6
+
+Close Touch OSC on Mac and iDevice
+
+Disable WiFi on Mac and iDevice
+
+Open Touch OSC on Mac, no connections
+
+Open Touch OSC on iDevice, no connections
+
+OSC Connection - Device cannot see anything
+
+Connect iDevice to Bridge on USB
+
+OSC Connection - iDevice cannot see anything
+
+Connect iDevice to Bridge on Mac.
+
+OSC Connection - iDevice cannot see anything
+
+Connect iDevice to MIDI using Bridge 1
+
+OSC Connection - iDevice cannot see anything
+
+Enable WiFi on Mac and iDevice
+
+OSC Connection - iDevice cannot see anything
+
+---
+
+## Setup - Attempt 7
+
+Disable WiFi on Mac and iDevice
+
+Touch OSC Mac - OSC Connection > Enable TCP Server on Port 6667 > Done
+
+iDevice - OSC Connection > Enable TCP Client > Browse > Select Mac > 169.254.246.29:6667 (didn't work - no log output) > 169.254.60.75:6667 (log outout works but doesn't work in Live)
+
+---
+
+## Setup - Attempt 8
+
+Enable WiFi on Mac and iDevice
+
+Close Touch OSC on Mac
+
+Touch OSC on iDevice - OSC Connection > UDP > Mac > 169.254.88.217:6667 (169.254.15.68:6667 didn't work)
+
+---
+
+## Setup - Attempt 9
+
+Close Bridge
+
+Delete connections on iDevice
+
+Close Live
+
+Open Touch Osc on iDevice
+
+OSC Connection - iDevice cannot see anything
+
+Start Touch Osc Bridge
+
+OSC Connection - iDevice cannot see anything
+
+Open Live - maybe it is the host?
+
+OSC Connection - iDevice cannot see anything
+
+iDevice - Enable Bridge on USB
+
+OSC Connection - iDevice cannot see anything
+
+iDevice - Enable Bridge on Mac 169.254.88.217
+
+OSC Connection - iDevice cannot see anything
+
+iDevice - Enable Bridge on Mac 169.254.15.68
+
+OSC Connection - iDevice cannot see anything
+
+iDevice - Enable Bridge on Mac 192.168.1.24
+
+OSC Connection - iDevice cannot see anything
+
+---
+
+## Setup - Attempt 10
+
+Create Ad Hoc network on Mac
+
+Cannot connect to this from iDevice
+
+---
+
+## Setup - Attempt 11
+
+Open Touch Osc on Mac
+
+Connections > OSC > Enable Connection 1 > UDP
+
+Host is prefilled with the Mac's IP of 192.168.1.24. Unsure if I put it in there at some point or whether it always auto prefills.
+
+Verify that it's the Mac by clicking the (i) next to Receive Port - en0 = 192.168.1.24
+
+Verify again by opening System Preferences > Network > The IP is shown under Status: Connected
+
+Open Touch Osc on iDevice
+
+Connections > OSC > Enable Connection 1 > UDP
+
+Host > Browse > Mac > 192.168.1.24:6667
+
+Send Port: 6667
+
+Receive Port: 6668
+
+Ableton OSC Touch OSC: Port 6667, then re-Learn control and Parameter
+
+Ableton OSC Send: 192.168.1.21 (iDevice A), Port 6668, then re-Learn Parameter
+
+Ableton OSC Send: 192.168.1.35 (iDevice B), Port 6668, then re-Learn Parameter
+
+iDevice A and B now control each other and Live
+
+Rinse and repeat
+
+^ was WiFi on this go-round?
+
+---
+
+## Setup - Attempt 12
+
+Disable WiFi on Mac and iPad
+
+Clear out UDP settings on Touch OSC Mac and iDevice and restart the apps
+
+Mac: Connections > UDP > Host: Browse gives nothing so click the (i) - enter 127.0.0.1
+
+Send Port: 8002 (was 8000 but logically...)
+
+Receive Port: 8001
+
+iDevice A: Connections > UDP > Host: 169.254.227.211 (the second one I tried, this also took a little while to appear in the list)
+
+iDevice B: Connections > UDP > Host: 169.254.48.160:8001 (the second one I tried, this also took a little while to appear in the list)
+
+Send Port: 8001
+
+Receive Port: 8002
+
+Ableton OSC Touch OSC: Port 8001, then re-Learn control and Parameter
+
+Ableton OSC Send: 169.254.136.24 (iDevice A), Port 8002, then re-Learn Parameter
+
+Ableton OSC Send: 169.254.12.82 (iDevice B), Port 8002, then re-Learn Parameter
+
+Rinse and repeat
 
 ---
