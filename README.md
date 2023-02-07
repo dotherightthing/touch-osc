@@ -71,8 +71,9 @@ Tap on *Connections* (link icon)
    * *Port*: This is the Mac's 'in' port, corresponding to the iOS device's 'out' port - so enter the iOS *Send Port* number (`6666`)
    * Click *Learn* > Move the slider on an iOS device > `/myfader` appears under *OSC Address`
    * Click *Map* > Move a control in Live > The control's name appears under the *Parameter* box
-   * Move the slider on an iOS device > The mapped control moves
-   * The mapped control cannot be moved with the mouse anymore.
+   * Move the slider on an iOS device > The mapped control moves.
+   * Note: this is uni-directional, so the other connected iDevices won't update to match, and you'll need to configure each device to have a matching UDP connection in order for them to also have uni-directional control.
+   * Note: The mapped control cannot be moved with the mouse anymore.
 
 ---
 
