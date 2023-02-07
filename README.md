@@ -15,6 +15,8 @@ The device apps also have built in editors, but for the purpose of keeping every
 
 Click on *Editor Network* (WiFi icon) > Server > Enabled.
 
+**Note: this comes with some quirks.** Repeatedly toggling the *Editor Network* off and on seems to open a new tab on the client iDevice. With multiple copies open, it's difficult to know which one is synced to the macOS server - some of them? all of them? none of them?
+
 In the menubar, click `+` > *Fader*.
 
 Locate the *Control* panel on the right hand side of the editor. The *Name* is *fader1*.
