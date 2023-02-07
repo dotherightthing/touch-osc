@@ -60,20 +60,35 @@ Tap on *Connections* (link icon)
    * UDP
    * Host: Tap *Browse* and select the Mac, then select `192.xxx.x.xx:6666`. If this doesn't appear toggle WiFi on and off in your System Preferences.
    * Send Port: `6666` (as per the selected host)
-   * Receive Port: **TODO**
+   * Receive Port: `6667` (arbitrary - this (just) needs to be [different from the Send port](https://support.etcconnect.com/HES/Consoles/Hog_4/Networking/How_To_Setup_Touch_OSC_and_Hog_4)). Tap the `(i)` to the right to see the IP address of the iDevice - `en0 192.168.1.21`.
    * Enable by checking the checkbox
 
 #### Ableton Live
 
 1. Download the free [Connection Kit](https://www.ableton.com/en/packs/connection-kit/).
 2. Open Ableton Live and drag *OSC TouchOSC.amxd* and *OSC Send.amxd* to the *User Library*
-3. Drag *OSC TouchOSC* to a track
-   * *Port*: This is the Mac's 'in' port, corresponding to the iOS device's 'out' port - so enter the iOS *Send Port* number (`6666`)
-   * Click *Learn* > Move the slider on an iOS device > `/myfader` appears under *OSC Address* > click *Learn* again to deactivate learn mode
-   * Click *Map* > Move a control in Live > The control's name appears under the *Parameter* box
-   * Move the slider on an iOS device > The mapped control moves.
-   * Note: this is uni-directional, so the other connected iDevices won't update to match, and you'll need to configure each device to have a matching UDP connection in order for them to also have uni-directional control.
-   * Note: The mapped control cannot be moved with the mouse anymore.
+
+##### Input
+
+Drag *OSC TouchOSC.amxd* to a track
+
+1. *Port*: This is the Mac's 'in' port, corresponding to the iOS device's 'out' port - so enter the iOS *Send Port* number (`6666`)
+2. Click *Learn* > Move the slider on an iOS device > `/myfader` appears under *OSC Address* > click *Learn* again to deactivate learn mode
+3. Click *Map* > Move a control in Live > The control's name appears under the *Parameter* box
+4. Move the slider on an iOS device > The mapped control moves.
+
+* Note: this is uni-directional, so the other connected iDevices won't update to match, and you'll need to configure each device to have a matching UDP connection in order for them to also have uni-directional control.
+* Note: The mapped control cannot be moved with the mouse anymore.
+
+##### Output
+
+Disable the *OSC TouchOSC* device
+
+Drag *OSC Send.amxd* to the same (or another) track
+
+1. *Host*: Enter the IP Address of the iDevice (`192.168.1.21`)
+2. *Port*: Enter the *Receive Port* of the iDevice (`6667`)
+3. Move the slider in Live > The control will update on the iDevice
 
 ---
 
