@@ -90,7 +90,7 @@ Drag *OSC Send.amxd* to the same (or another) track
 2. *Port*: Enter the *Receive Port* of the iDevice (`6667`)
 3. Move the slider in Live > The control will update on the iDevice
 
-Enable the *OSC TouchOSC* device. **Now** adjusting the control on an iDevice will mirror the changes in the Mac editor - but not vice versa..
+Enable the *OSC TouchOSC* device. **Now** adjusting the control on an iDevice will mirror the changes in the Mac editor - but not vice versa. Changing the *OSC Send* Host to `192.168.1.21` (the Mac) allows the Mac editor to control the iDevice, but again not vice versa.
 
 ---
 
