@@ -46,18 +46,6 @@ Click on an element in the desktop editor, change the *Color* then click away. T
 
 ---
 
-### MIDI
-
-#### Desktop
-
-Download [TouchOSC Bridge](https://hexler.net/touchosc).
-
-> TouchOSC Bridge is a standalone application that relays MIDI messages sent from TouchOSC to any MIDI capable application on your computer (and vice versa). TouchOSC Bridge is free to download and use. 
-
-Install and open TouchOSC Bridge. *Enable USB Connections* is checked by default.
-
-Download and install the [Protokol](https://hexler.net/protokol) test utility.
-
 ### OSC
 
 #### Desktop
@@ -69,5 +57,18 @@ Download and install the [Protokol](https://hexler.net/protokol) test utility.
 1. Download the free [Connection Kit](https://www.ableton.com/en/packs/connection-kit/).
 2. Open Ableton Live and drag *OSC TouchOSC.amxd* and *OSC Send.amxd* to the *User Library*
 3. Drag *OSC TouchOSC* to a track
- * Port: Use the value from *TouchOSC app (any platform) > Connections > OSC > Send Port*. My desktop shows `6666` while my 3 connected iDevices show `8000`, so I entered `8000`
+   * *Port*: Use the value from *TouchOSC app (any platform) > Connections > OSC > Send Port*. My desktop shows `6666` while my 3 connected iDevices show `8000`, so I entered `8000`
 
+---
+
+### MIDI
+
+#### Desktop
+
+Download [TouchOSC Bridge](https://hexler.net/touchosc).
+
+> TouchOSC Bridge is a standalone application that relays MIDI messages sent from TouchOSC to any MIDI capable application on your computer (and vice versa). TouchOSC Bridge is free to download and use. 
+
+Install and open TouchOSC Bridge. *Enable USB Connections* is checked by default.
+
+Download and install the [Protokol](https://hexler.net/protokol) test utility.
