@@ -67,9 +67,9 @@ Tap on *Connections* (link icon)
 
 *Connection 1*:
    * UDP
-   * Host: Tap *Browse* and select the Mac, then select `192.xxx.x.xx:6666`. If this doesn't appear toggle WiFi on and off in your System Preferences.
-   * Send Port: `6666` (as per the selected host)
-   * Receive Port: `6667` (arbitrary - this (just) needs to be [different from the Send port](https://support.etcconnect.com/HES/Consoles/Hog_4/Networking/How_To_Setup_Touch_OSC_and_Hog_4)). Tap the `(i)` to the right to see the IP address of the iDevice - `en0 192.168.1.21`.
+   * Host: Tap *Browse* and select the Mac, then select `169.xxx.xxx.xx:xxxx` (this appears at position 3 on the list and is currently `169.254.248.82:6667`.
+   * Send Port: `6667` (as per the selected host)
+   * Receive Port: `6668` (arbitrary - this (just) needs to be [different from the Send port](https://support.etcconnect.com/HES/Consoles/Hog_4/Networking/How_To_Setup_Touch_OSC_and_Hog_4)). Tap the `(i)` to the right to see the IP address of the iDevice - `en2 169.254.77.91`.
    * Enable by checking the checkbox
 
 #### Ableton Live
