@@ -15,6 +15,19 @@ The device apps also have built in editors, but for the purpose of keeping every
 
 Click the WiFi symbol (which means *Editor Network*) > Server > Enabled.
 
+In the menubar, click `+` > *Fader*.
+
+Locate the *Control* panel on the right hand side of the editor. The *Name* is *fader1*.
+
+Locate the *Messages* panel below this. The *Address* is `/name`. This means that the OSC address of this control is `./fader1`.
+
+To change the name:
+
+1. Click on `name` and click Delete.
+2. To the right of *Address*, click `+` > Constant.
+3. Delete `constant` and type something else, e.g. `myfader`.
+4. Click away and the *Address* changes to `/myfader`, while the *Control* name is still `fader1`. This means that the OSC address of the `fader1` control is now `./myfader`.
+
 #### iOS
 
 Download [TouchOSC app from the App Store](https://apps.apple.com/us/app/touchosc/id1569996730) (USD 9.99, NZD 16.99). One purchase enables the download for all of your iDevices.
