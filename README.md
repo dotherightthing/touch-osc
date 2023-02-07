@@ -54,6 +54,8 @@ This puts your device into Control Surface mode. (This is usually accessed via t
 >
 > [Source](https://forum.cockos.com/showpost.php?s=2ec6a5eec3cf68ef01881e65ae863ad9&p=2113867&postcount=4)
 
+While [Wired USB Connection To TouchOSC](https://osculator.net/forum/forum/support/mobile-apps-ios-android/1882-wired-usb-connection-to-touchosc) suggests that a wired connection supports both MIDI and OSC.
+
 
 #### macOS
 
