@@ -5,7 +5,7 @@ Experiments with TouchOSC
 
 ---
 
-### Editor
+### Interface Editor
 
 #### MacOS
 
@@ -25,11 +25,13 @@ Connect your device via USB if possible to reduce latency.
 
 Open the app.
 
-Click the WiFi symbol (which means *Editor Network*) > Client. Select your Mac's name from the list. Locate the address `192.xxx.x.xx:6666` and click *Connect* (I don't know what the other addresses represent and/or if one of them is the USB connection).
+Click the WiFi symbol (which means *Editor Network*) > Client. Locate your Mac's name in the list and click the down arrow to see the address options.
 
-This puts your device into Control Surface mode (usually accessed via the triangle / *Play* icon).
+Locate the address `192.xxx.x.xx:6666` and click *Connect* (I don't know what the other addresses represent and/or if one of them is the USB connection).
 
-Click on an element in the desktop editor, change the *Color* then click away. The element color should update on the iDevice as well.
+This puts your device into Control Surface mode. (This is usually accessed via the triangle / *Play* icon).
+
+Click on an element in the desktop editor, change the *Color* then click away. The element color should update on all connected iDevices as well.
 
 ---
 
