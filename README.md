@@ -11,8 +11,6 @@ Experiments with TouchOSC
 
 Download and install [TouchOSC app for Mac](https://hexler.net/touchosc). It's free but intermittently suggests that you [buy a license](https://hexler.net/touchosc#buy) (NZD 44.16).
 
-Download and install the [Protokol](https://hexler.net/protokol) test utility.
-
 The device apps also have built in editors, but for the purpose of keeping everything in sync use the Client-Server *Editor Network* instead:
 
 Click the WiFi symbol (which means *Editor Network*) > Server > Enabled.
@@ -45,9 +43,15 @@ Download [TouchOSC Bridge](https://hexler.net/touchosc).
 
 Install and open TouchOSC Bridge. *Enable USB Connections* is checked by default.
 
+Download and install the [Protokol](https://hexler.net/protokol) test utility.
+
 ### OSC
 
-### Ableton Live
+#### Desktop
+
+Download and install the [Protokol](https://hexler.net/protokol) test utility.
+
+#### Ableton Live
 
 1. Download the free [Connection Kit](https://www.ableton.com/en/packs/connection-kit/).
 2. Open Ableton Live and drag *OSC TouchOSC.amxd* and *OSC Send.amxd* to the *User Library*
